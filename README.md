@@ -15,3 +15,21 @@ name: addonname
 version: "my verson 1.0"
 author: authorname
 ```
+
+# Maven Repo
+```xml
+    <repositories>
+        <repository>
+            <id>JitPack</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.abhiram555</groupId>
+            <artifactId>RemoteAddonAPI</artifactId>
+            <version>dev-19ca9e9f9f-1</version>
+        </dependency>
+    </dependencies>
+```	
