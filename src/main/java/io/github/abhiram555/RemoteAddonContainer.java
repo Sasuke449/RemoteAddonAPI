@@ -17,11 +17,9 @@ public class RemoteAddonContainer <T>{
     private final ArrayList<AddonClassLoader> classLoaders = new ArrayList<>();
     private final AddonSettings addonSettings = new AddonSettings();
     private final Plugin plugin;
-    private Class<? extends T> mainclass;
 
-    public RemoteAddonContainer(Plugin plugin,Class<? extends T> mainclass){
+    public RemoteAddonContainer(Plugin plugin){
         this.plugin = plugin;
-        this.mainclass = mainclass;
     }
 
     public void loadAddon(File file) throws Exception {

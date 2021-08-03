@@ -11,7 +11,7 @@ public class ExamplePlugin extends JavaPlugin {
 
     @Override
     public void onEnable(){
-        this.addonContainer = new RemoteAddonContainer<>(this,ExampleAddon.class);
+        this.addonContainer = new RemoteAddonContainer<>(this);
 
         addonContainer.getAddonSettings().setMainFest("abhi.yml"); // Supports only yaml
 
