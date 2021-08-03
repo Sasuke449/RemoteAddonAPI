@@ -11,6 +11,6 @@ You can see all the example's in src/main/java/me/abhiram/example
 # Addon manifest format
 ```yaml
 main: path.to.mainclass
-name: addonnam
+name: addonname
 version: "my verson 1.0"
 author: authorname```
