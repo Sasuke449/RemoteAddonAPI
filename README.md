@@ -13,4 +13,5 @@ You can see all the example's in src/main/java/me/abhiram/example
 main: path.to.mainclass
 name: addonname
 version: "my verson 1.0"
-author: authorname```
+author: authorname
+```
