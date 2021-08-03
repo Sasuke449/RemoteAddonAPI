@@ -34,7 +34,7 @@ public class AddonClassLoader<T> extends URLClassLoader {
             try {
                 pluginClass = (Class<? extends T>) jarClass.asSubclass(Addon.class);
             } catch (ClassCastException ex) {
-                throw new InvalidAddonException("main class `" + addonInfo.getClassPath() + "' does not extend " + clazz.getClass().getName());
+                throw new InvalidAddonException("main class `" + addonInfo.getClassPath() + "' does not extend Addon");
             }
 
             this.clazz = pluginClass.newInstance();
