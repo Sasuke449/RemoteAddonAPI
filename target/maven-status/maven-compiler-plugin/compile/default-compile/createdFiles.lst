@@ -1,0 +1,8 @@
+io\github\abhiram555\RemoteAddonContainer.class
+io\github\abhiram555\model\Addon.class
+io\github\abhiram555\model\AddonSettings.class
+io\github\abhiram555\model\AddonInfo.class
+io\github\abhiram555\exception\InvalidAddonException.class
+me\abhiram\example\ExamplePlugin.class
+io\github\abhiram555\loader\AddonClassLoader.class
+me\abhiram\example\ExampleAddon.class
