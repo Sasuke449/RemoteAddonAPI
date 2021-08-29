@@ -2,6 +2,7 @@ package io.github.abhiram555;
 
 import io.github.abhiram555.exception.InvalidAddonException;
 import io.github.abhiram555.loader.AddonClassLoader;
+import io.github.abhiram555.model.Addon;
 import io.github.abhiram555.model.AddonInfo;
 import io.github.abhiram555.model.AddonSettings;
 import org.bukkit.plugin.Plugin;
@@ -32,6 +33,8 @@ public class RemoteAddonContainer <T>{
         AddonClassLoader<T> addonClassLoader = new AddonClassLoader(getClass().getClassLoader(),file,info,this);
         this.classLoaders.add(addonClassLoader);
         T mainclazz = (T) addonClassLoader.getMainClass();
+        Addon addon = (Addon) mainclazz;
+        addon.setAddonInfo(info);
         addonmainclasses.add(mainclazz);
 
     }
